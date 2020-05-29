@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Person } from '../DatosPen/Person';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -21,10 +22,10 @@ export class PersonService {
   }
 
   actualizarPersona(id: string, update: Person){
-    return this.http.put( `${this.URL}/person/${id}`, update);
+    return this.http.put( `${this.URL}/persona/${id}`, update);
   }
 
   eliminarPersona(id: string){
-    return this.http.delete( `${this.URL}/person/${id}`);
+    return this.http.delete( `${this.URL}/persona/${id}`);
   }
 }

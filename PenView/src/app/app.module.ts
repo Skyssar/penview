@@ -22,6 +22,7 @@ import { MapComponent } from './components/map/map.component';
 import { AppRoutingModule } from './app.routing';
 
 import { PersonService } from './servicios/person.service';
+import { PensionComponent } from './components/pension/pension.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PersonService } from './servicios/person.service';
     RegisterComponent,
     LessorComponent,
     AdminComponent,
-    MapComponent
+    MapComponent,
+    PensionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+<mat-card class="mat-card-segundo">
+    <mat-card-header>Datos de pensión</mat-card-header>
+    <br>
+    <br>
+    <form>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="name">
+                            <mat-label>Nombre de la pensión</mat-label>
+                            <input matInput  disabled placeholder="escriba aquí nombre" required>
+                        </mat-form-field>
+                    <td>
+                     <td>
+                            <mat-form-field class="address">
+                                <mat-label>Dirección</mat-label>
+                                <input matInput disabled placeholder="escriba direccion de la pensión" required>
+                            </mat-form-field>
+                     </td>
+                     <td>
+                        <mat-form-field class="disponible">
+                            <mat-label>Disponibilidad (Cupos)</mat-label>
+                            <input matInput disabled placeholder="escriba cupos aquí" required>
+                        </mat-form-field>
+                     </td>
+                     <tr>
+                         <td>
+                            <mat-form-field class="precio" >
+                                <mat-label>Precio</mat-label>
+                                <input matInput disabled placeholder="escriba precio de pensión aquí" required>
+                            </mat-form-field>
+                         </td>
+                        </tr>
+                         <tr>
+                         <td>
+                            <mat-form-field class="description">
+                                <mat-label>Descripcion (Plan)</mat-label>
+                                <textarea matInput disabled placeholder="escriba su plan de servicio"></textarea>
+                                <mat-hint>Opcional</mat-hint>
+                            </mat-form-field>
+                         </td>
+                     </tr>
+            </table>
+            <button class="button" mat-raised-button disabled>Finalizar</button>
+        </div>
+    </form>
+</mat-card>
+

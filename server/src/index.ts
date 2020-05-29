@@ -4,6 +4,7 @@ import cors from 'cors';
 
 import indexRoutes from './routes/indexRoutes';
 import personanaturalRoutes from './routes/personanaturalRoutes';
+import pensionRoutes from './routes/pensionRoutes'
 
 class Server {
 
@@ -28,6 +29,7 @@ class Server {
 
         this.app.use('/', indexRoutes);
         this.app.use('/api/person', personanaturalRoutes);
+        this.app.use('/api/pension', pensionRoutes);
     }
 
     start() {
