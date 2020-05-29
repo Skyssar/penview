@@ -1,0 +1,139 @@
+<div class="head">
+    <mat-toolbar class="toolbar">
+        <img class="image-title" src="https://image.flaticon.com/icons/svg/2897/2897653.svg" alt="icon">
+        <mat-label class="title-name">Registre su cuenta</mat-label>
+    </mat-toolbar>
+</div>
+
+<mat-card class="mat-card-primero">
+    <mat-card-header>Datos Personales</mat-card-header>
+    <br>
+    <br>
+    <form>
+        <div class="text-field">
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="rol">
+                            <mat-label>Rol</mat-label>
+                            <select matNativeControl>
+                                <option *ngFor="let rol of rols">
+                                    {{rol.viewValue}}
+                                </option>
+                            </select>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="name">
+                            <mat-label>Nombres</mat-label>
+                            <input name= "nombres_pn" [(ngModel)] = "person.nombres_pn" matInput placeholder="escriba su nombre" required >
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="last-name">
+                            <mat-label>Apellidos</mat-label>
+                            <input name= "apellidos_pn" [(ngModel)] = "person.apellidos_pn" matInput placeholder="escriba su apellido" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr class="row-1">
+                    <td>
+                        <mat-form-field class="ocupacion">
+                            <mat-label>Ocupación</mat-label>
+                            <input name= "ocupacion_pn" matInput placeholder="escriba su ocupacion" [(ngModel)] = "person.ocupacion_pn">
+                            <mat-hint>Opcional</mat-hint>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="cellphone">
+                            <mat-label>Telefono</mat-label>
+                            <input  name = telefono [(ngModel)] = "person.telefono_pn" matInput placeholder="escriba su telefono" >
+                            <mat-hint>Opcional</mat-hint>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="cell">
+                            <mat-label>Celular</mat-label>
+                            <input matInput placeholder="escriba su celular" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr class="row-2">
+                    <td>
+                        <mat-form-field class="email">
+                            <mat-label>E-mail</mat-label>
+                            
+                            <input type="text" name= "email" [(ngModel)] = "person.email_pn" matInput placeholder="escriba su e-mail" required >
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="password">
+                            <mat-label>Contraseña</mat-label>
+                            <input name= "password_pn" matInput [type]="hide ? 'password' : 'text'" required [(ngModel)] = "person.password_pn">
+                            
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                                [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            <button routerLink="login" class="button" (click)= "SavePersona()" mat-raised-button>Validar y Continuar</button>
+            <button routerLink="login" class="button-2" mat-raised-button>Cancelar</button>
+            <button class="button-3" mat-raised-button disabled> Actualizar </button>
+        </div>
+    </form>
+</mat-card>
+
+<mat-card class="mat-card-segundo">
+    <mat-card-header>Datos de pensión</mat-card-header>
+    <br>
+    <br>
+    <form>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="name">
+                            <mat-label>Nombre de la pensión</mat-label>
+                            <input matInput  disabled placeholder="escriba aquí nombre" required>
+                        </mat-form-field>
+                    <td>
+                     <td>
+                            <mat-form-field class="address">
+                                <mat-label>Dirección</mat-label>
+                                <input matInput disabled placeholder="escriba direccion de la pensión" required>
+                            </mat-form-field>
+                     </td>
+                     <td>
+                        <mat-form-field class="disponible">
+                            <mat-label>Disponibilidad (Cupos)</mat-label>
+                            <input matInput disabled placeholder="escriba cupos aquí" required>
+                        </mat-form-field>
+                     </td>
+                     <tr>
+                         <td>
+                            <mat-form-field class="precio" >
+                                <mat-label>Precio</mat-label>
+                                <input matInput disabled placeholder="escriba precio de pensión aquí" required>
+                            </mat-form-field>
+                         </td>
+                        </tr>
+                         <tr>
+                         <td>
+                            <mat-form-field class="description">
+                                <mat-label>Descripcion (Plan)</mat-label>
+                                <textarea matInput disabled placeholder="escriba su plan de servicio"></textarea>
+                                <mat-hint>Opcional</mat-hint>
+                            </mat-form-field>
+                         </td>
+                     </tr>
+            </table>
+            <button class="button" mat-raised-button disabled>Finalizar</button>
+        </div>
+    </form>
+</mat-card>
+
+<img class="img" src="https://image.flaticon.com/icons/png/512/1295/1295181.png" alt="icon">
+<mat-label class="foot">PenView</mat-label>

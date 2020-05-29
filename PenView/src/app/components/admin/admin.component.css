@@ -1,0 +1,75 @@
+.head .toolbar{
+    height: 110px;
+}
+
+.head .toolbar .title{
+    bottom: 94%;
+    left: 3%;
+    position: absolute;
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.head .toolbar .title-image{
+    bottom: 95%;
+    border-radius: 40%;
+    max-width: 18px;
+    position: absolute;
+    opacity: 70%;
+}
+
+.head .toolbar .title-name{
+    left: 20%;
+    position: absolute;
+    font-size: 40px;
+}
+
+
+.head .toolbar .title-account{
+    left: 75%;
+    position: absolute;
+    font-size: 20px;
+}
+
+button{
+    height: 400px;
+    width: 350px;
+    top: 30%;
+    position: absolute;
+}
+
+.panel-card {
+    left: 20%;
+}
+
+.panel-card .panel-card-image{
+    max-width: 200px;
+    bottom: 40%;
+    left: 23%;
+    position: absolute;
+}
+
+.panel-card .title{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    font-size: 40px;
+}
+
+.panel-card-1 {
+    left: 60%;
+}
+
+.panel-card-1 .panel-card-image{
+    max-width: 200px;
+    bottom: 40%;
+    left: 18%;
+    position: absolute;
+}
+
+.panel-card-1 .title{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    font-size: 40px;
+}

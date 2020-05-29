@@ -1,0 +1,94 @@
+.head .toolbar .title-name{
+    left: 20%;
+    position: absolute;
+}
+
+.head .toolbar .image-title{
+    max-width: 32px;
+    left: 17%;
+    position: absolute;
+}
+
+.mat-card-primero{
+    top: 12%;
+    left: 2%;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+}
+
+.mat-card-segundo{
+    top: 12%;
+    left: 53%;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+}
+
+.text-field .name{
+    margin-left: 12px;
+}
+
+.text-field .last-name{
+    margin-left: 12px;
+}
+
+.text-field .row-1 .ocupacion{
+    margin-top: 20%;
+    visibility: visible;
+}
+
+.text-field .row-1 .cellphone{
+    margin-top: 20%;
+    margin-left: 12px;
+}
+
+.text-field .row-1 .cell{
+    margin-top: 20%;
+    margin-left: 12px;
+}
+
+.text-field .row-2 .email{
+    margin-top: 20%;
+}
+
+.text-field .row-2 .password{
+    margin-top: 20%;
+    margin-left: 12px;
+}
+
+.text-field .button-2{
+    margin-top: 5%;
+    margin-left: 12px;
+}
+
+.text-field .button-3{
+    margin-top: 5%;
+    margin-left: 12px;
+}
+
+.mat-card-segundo .description{
+    width: 200%;
+    height: 100%;
+}
+
+.mat-card-segundo .button{
+    margin-top: 5%;
+}
+
+.foot{
+    position: absolute;
+    font-size: 50px;
+    top: 85%;
+    left: 84%;
+    opacity: 50%;
+}
+
+.img{
+    border-radius: 40%;
+    max-width: 42px;
+    top: 86%;
+    left: 81%;
+    position: absolute;
+    opacity: 50%;
+}

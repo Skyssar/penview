@@ -1,0 +1,77 @@
+.head .title{
+    font-size: 50px;
+    top: 3%;
+    left: 33%;
+    position: absolute;
+    transform: translate(-100%, -5%);
+}
+
+.head .image-title{
+    border-radius: 40%;
+    max-width: 32px;
+    left: 16%;
+    position: absolute;
+}
+
+.example-card {
+    height: 500px;
+    width: 400px;
+    top: 13%;
+    left: 15%;
+    position: absolute;
+    
+}
+
+.example-card .button{
+    margin-left: 35%;
+    width: 30%;
+}
+
+.example-card .links{
+    margin-top: 20px;
+}
+
+.image{
+    border-radius: 50%;
+    max-width: 150px;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+.text-field .full-width {
+    margin-left: 8px;
+    width: 100%;
+  }
+
+  .text-field-2 .full {
+    margin-left: 8px;
+    width: 100%;
+  }
+
+.text .p1{
+    top: 18%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+}
+
+.text .p2{
+    top: 38%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+}
+
+.text .p3{
+    top: 58%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+}
+
+.text .p4{
+    top: 78%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+}

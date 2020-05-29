@@ -1,0 +1,54 @@
+<div class="head">
+    <mat-toolbar>
+      <img class="image-title" src="https://image.flaticon.com/icons/png/512/1295/1295181.png" alt="icon">
+      <mat-label class="title">PenView</mat-label>
+    </mat-toolbar>
+</div>
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>INICIO DE SESIÓN</mat-card-title>
+    </mat-card-header>
+    <img  class="image" mat-card-image src="https://image.flaticon.com/icons/svg/2919/2919573.svg" alt="users">
+    <mat-card-content>
+        <div class="text-field">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>E-mail</mat-label>
+              <input matInput placeholder="pat@example.com" (FormControl)='email'required>
+            </mat-form-field>
+          </div>
+          
+          <div class="text-field-2">
+            <mat-form-field class="full" appearance="fill">
+              <mat-label>Contraseña</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'">
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+            </div>
+
+    </mat-card-content>
+      <button (click)="ingreso()" class="button" mat-raised-button>Ingreso</button>
+      <br>
+      <div style='text-align:center' class="links">
+        <a  (click) = "registro()" > ¿No tienes cuenta? Regístrate aquí</a>
+        <br> ó
+        <br>
+      <a (click) = "ingresoMap()" >
+        Busca una pensión sin registrarse</a>
+      </div>
+</mat-card>
+
+<div class="text">
+    <mat-label class="p1">LOCALIZA</mat-label>
+    <br>
+    <mat-label class="p2">LAS MEJORES</mat-label>
+    <br>
+    <mat-label class="p3">PENSIONES DE MONTERÍA</mat-label>
+    <br>
+    <mat-label class="p4">AQUÍ!</mat-label>
+    <br>
+</div>
+
+  
+
